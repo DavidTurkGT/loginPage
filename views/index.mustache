@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome!</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to my site!</h1>
+      <h3>Please select an option below</h3>
+      <div class="messages">
+        {{#messages}}
+        <p>{{.}}</p>
+        {{/messages}}
+      </div>
+      <div class="login-container">
+        <form class="login" action="/" method="post">
+          <fieldset>
+            <legend>Login</legend>
+            <input type="text" name="username" value="" placeholder="Username">
+            <input type="password" name="password" value="" placeholder="Password">
+            <button type="submit" name="button" value="login">Login</button>
+          </fieldset>
+        </form>
+      </div>
+      <div class="add-user-container">
+        <form class="add-user" action="/" method="post">
+          <fieldset>
+            <legend>Sign Up</legend>
+            <input type="text" name="username" value="" placeholder="Username">
+            <input type="password" name="password" value="" placeholder="Password">
+            <button type="submit" name="button" value="add-user">Sign Up!</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
